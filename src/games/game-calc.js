@@ -20,6 +20,7 @@ const gameCalc = () => {
 
     console.log(`Question: ${firstRandomNumber} ${operator} ${secondRandomNumber}`);
     const answer = readlineSync.question('Your answer: ');
+    // eslint-disable-next-line no-eval
     const result = eval(`${firstRandomNumber} ${operator} ${secondRandomNumber}`);
 
     if (answer === String(result)) {
