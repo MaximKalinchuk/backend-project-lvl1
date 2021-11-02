@@ -25,7 +25,7 @@ const gameEven = () => {
       console.log('Correct!');
     } else if (answer !== variable) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${variable}'.`);
-      console.log("Let's try again, Bill!");
+      console.log(`Let's try again, ${userName}!`);
       break;
     }
     console.log(`Congratulations, ${userName}!`);
