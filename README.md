@@ -5,4 +5,4 @@
 ![example workflow](https://github.com/MaximKalinchuk/backend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
 ___
 ### Thirst game in this project is Brain-Even Game:
-![Brain-Even Game](https://asciinema.org/a/UdY9vPGvgEKIp47Ej3xO4tdj5)
+[![asciicast](https://asciinema.org/a/UdY9vPGvgEKIp47Ej3xO4tdj5.svg)](https://asciinema.org/a/UdY9vPGvgEKIp47Ej3xO4tdj5)
