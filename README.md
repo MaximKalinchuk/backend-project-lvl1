@@ -6,3 +6,5 @@
 ___
 ### Thirst game in this project is Brain-Even Game:
 [![asciicast](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ.svg)](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ)
+### Second game in this project is Brain-Calculater Game:
+[![asciicast](https://asciinema.org/a/446583.svg)](https://asciinema.org/a/446583)

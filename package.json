@@ -5,7 +5,8 @@
   "description": "[![Actions Status](https://github.com/MaximKalinchuk/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MaximKalinchuk/backend-project-lvl1/actions)",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "main": "index.js",
   "scripts": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/MaximKalinchuk/backend-project-lvl1#readme",
   "dependencies": {
+    "@hexlet/pairs": "^1.1.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {

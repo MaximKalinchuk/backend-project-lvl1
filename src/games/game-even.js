@@ -9,26 +9,30 @@ const gameEven = () => {
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
+  let counter = 0;
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInRange(2, 99);
-    let variable;
+    let result;
     if (randomNumber % 2 === 0) {
-      variable = 'yes';
+      result = 'yes';
     } else {
-      variable = 'no';
+      result = 'no';
     }
 
     console.log(`Question: ${randomNumber}`);
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer === variable) {
+    if (answer === result) {
       console.log('Correct!');
-    } else if (answer !== variable) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${variable}'.`);
+      counter += 1;
+    } else if (answer !== result) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
       console.log(`Let's try again, ${userName}!`);
       break;
     }
-    console.log(`Congratulations, ${userName}!`);
+    if (counter === 3) {
+      console.log(`Congratulations, ${userName}!`);
+    }
   }
 };
 
