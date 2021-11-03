@@ -1,4 +1,5 @@
-import readlineSync from 'readline-sync';
+// import readlineSync from 'readline-sync';
+import engine from '../index.js';
 
 const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const randomOperator = () => {
@@ -6,34 +7,17 @@ const randomOperator = () => {
   return operators[Math.floor(Math.random() * operators.length)];
 };
 
-const gameCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
+const gameRules = 'What is the result of the expression?';
 
-  console.log('What is the result of the expression?');
-  let counter = 0;
-  for (let i = 0; i < 3; i += 1) {
-    const firstRandomNumber = getRandomInRange(2, 10);
-    const secondRandomNumber = getRandomInRange(2, 10);
-    const operator = randomOperator();
-
-    console.log(`Question: ${firstRandomNumber} ${operator} ${secondRandomNumber}`);
-    const answer = readlineSync.question('Your answer: ');
-    // eslint-disable-next-line no-eval
-    const result = eval(`${firstRandomNumber} ${operator} ${secondRandomNumber}`);
-
-    if (answer === String(result)) {
-      console.log('Correct!');
-      counter += 1;
-    } else if (answer !== String(result)) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
-      console.log(`Let's try again, ${userName}!`);
-      break;
-    }
-    if (counter === 3) {
-      console.log(`Congratulations, ${userName}!`);
-    }
-  }
+const gameBody = () => {
+  const firstRandomNumber = getRandomInRange(2, 10);
+  const secondRandomNumber = getRandomInRange(2, 10);
+  const operator = randomOperator();
+  const gameQuestion = `${firstRandomNumber} ${operator} ${secondRandomNumber}`;
+  // eslint-disable-next-line no-eval
+  const result = String(eval(`${firstRandomNumber} ${operator} ${secondRandomNumber}`));
+  return [gameQuestion, result];
 };
+const gameCalc = () => engine(gameRules, gameBody);
+
 export default gameCalc;
