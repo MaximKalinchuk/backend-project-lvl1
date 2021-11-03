@@ -8,3 +8,5 @@ ___
 [![asciicast](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ.svg)](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ)
 ### Second game in this project is Brain-Calculater Game:
 [![asciicast](https://asciinema.org/a/446583.svg)](https://asciinema.org/a/446583)
+### Third game in this project is Brain-GCD Game:
+[![asciicast](https://asciinema.org/a/446811.svg)](https://asciinema.org/a/446811)
