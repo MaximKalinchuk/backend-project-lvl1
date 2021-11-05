@@ -5,12 +5,12 @@
 ![example workflow](https://github.com/MaximKalinchuk/backend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
 ___
 ### Thirst game in this project is Brain-Even Game:
-[![asciicast](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ.svg)](https://asciinema.org/a/NpP67SnN8bFcNZAgSNrYJqSpJ)
+[![asciicast](https://asciinema.org/a/447245.svg)](https://asciinema.org/a/447245)
 ### Second game in this project is Brain-Calculater Game:
-[![asciicast](https://asciinema.org/a/446583.svg)](https://asciinema.org/a/446583)
+[![asciicast](https://asciinema.org/a/447246.svg)](https://asciinema.org/a/447246)
 ### Third game in this project is Brain-GCD Game:
-[![asciicast](https://asciinema.org/a/446811.svg)](https://asciinema.org/a/446811)
+[![asciicast](https://asciinema.org/a/447247.svg)](https://asciinema.org/a/447247)
 ### Fourth game in this project is Brain-Prograssion Game:
-[![asciicast](https://asciinema.org/a/447159.svg)](https://asciinema.org/a/447159)
+[![asciicast](https://asciinema.org/a/447249.svg)](https://asciinema.org/a/447249)
 ### Fifth game in this project is Brain-Prime Game:
-[![asciicast](https://asciinema.org/a/mkukzgianYY6jmTmMeryeVg3y.svg)](https://asciinema.org/a/mkukzgianYY6jmTmMeryeVg3y)
+[![asciicast](https://asciinema.org/a/447250.svg)](https://asciinema.org/a/447250)
