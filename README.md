@@ -10,3 +10,5 @@ ___
 [![asciicast](https://asciinema.org/a/446583.svg)](https://asciinema.org/a/446583)
 ### Third game in this project is Brain-GCD Game:
 [![asciicast](https://asciinema.org/a/446811.svg)](https://asciinema.org/a/446811)
+### Fourth game in this project is Brain-Prograssion Game:
+[![asciicast](https://asciinema.org/a/447159.svg)](https://asciinema.org/a/447159)
