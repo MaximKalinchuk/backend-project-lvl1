@@ -7,7 +7,7 @@ const gameRules = 'Find the greatest common divisor of given numbers.';
 const gameBody = () => {
   const firstRandomNumber = getRandomInRange(2, 10);
   const secondRandomNumber = getRandomInRange(2, 10);
-  const gameQuestion = `${firstRandomNumber}, ${secondRandomNumber}`;
+  const gameQuestion = `${firstRandomNumber} ${secondRandomNumber}`;
   const nod = (firstNumber, secondNumber) => {
     if (secondNumber !== 0) {
       const someNumber = firstNumber % secondNumber;
