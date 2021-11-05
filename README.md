@@ -18,10 +18,12 @@
 * Убедитесь, что у вас установленна [Node.js 17.0.1](https://nodejs.org/en/) или новее.
 * Склонируйте репозиторий на свой компьютер: 
   * `git clone git@github.com:MaximKalinchuk/backend-project-lvl1.git`
-* Перейдите в репозиторий и установите зависимости: 
-  * `make install`
-* Установите пакеты:
-  * `make link`
+
+  __*Все команды выполнять в корне проекта /backend-project-lvl1*__
+
+* Перейдите в корень проекта */backend-project-lvl1* и выполните команды:
+  * `make install` - Установка зависимостей
+  * `make link` - Установка пакетов
 * Воспользуйтесь командами для запуска игр:
   * `brain-even`
   * `brain-calculater`
