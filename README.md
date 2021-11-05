@@ -15,6 +15,7 @@
 * Определение простого числа. (Brain-Prime Game)
 
 #### **Установка пакета с играми:**
+* Убедитесь, что у вас установленна [Node.js 17.0.1](https://nodejs.org/en/) или новее.
 * Склонируйте репозиторий на свой компьютер: 
   * `git clone git@github.com:MaximKalinchuk/backend-project-lvl1.git`
 * Перейдите в репозиторий и установите зависимости: 
@@ -27,6 +28,7 @@
   * `brain-gcd`
   * `brain-progression`
   * `brain-prime`
+
 
 
 #### **Демонстрация игр:**
