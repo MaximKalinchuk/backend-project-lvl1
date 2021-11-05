@@ -31,7 +31,7 @@
 
 
 
-#### **Демонстрация игр:**
+### **Демонстрация игр:**
 ___
 #### Демонстрация Brain-Even Game:
 [![asciicast](https://asciinema.org/a/447245.svg)](https://asciinema.org/a/447245)
