@@ -12,3 +12,5 @@ ___
 [![asciicast](https://asciinema.org/a/446811.svg)](https://asciinema.org/a/446811)
 ### Fourth game in this project is Brain-Prograssion Game:
 [![asciicast](https://asciinema.org/a/447159.svg)](https://asciinema.org/a/447159)
+### Fifth game in this project is Brain-Prime Game:
+[![asciicast](https://asciinema.org/a/mkukzgianYY6jmTmMeryeVg3y.svg)](https://asciinema.org/a/mkukzgianYY6jmTmMeryeVg3y)
