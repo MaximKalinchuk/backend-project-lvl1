@@ -1,6 +1,5 @@
 import engine from '../index.js';
-
-const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomInRange } from '../random.js';
 
 const gameRules = 'What number is missing in the progression?';
 

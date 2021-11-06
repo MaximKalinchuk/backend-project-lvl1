@@ -1,10 +1,5 @@
 import engine from '../index.js';
-
-const getRandomInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const randomOperator = () => {
-  const operators = ['*', '+', '-'];
-  return operators[Math.floor(Math.random() * operators.length)];
-};
+import { getRandomInRange, randomOperator } from '../random.js';
 
 const gameRules = 'What is the result of the expression?';
 
