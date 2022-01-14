@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/MaximKalinchuk/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MaximKalinchuk/backend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-![example workflow](https://github.com/MaximKalinchuk/backend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
+![example workflow](https://github.com/MaximKalinchuk/backend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
 #### **Что это такое?**
 Проект *Brain-Games* включает в сёбя пять консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
