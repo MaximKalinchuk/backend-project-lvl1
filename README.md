@@ -15,7 +15,7 @@
 * Определение простого числа. (Brain-Prime Game)
 
 #### **Установка пакета с играми:**
-* Убедитесь, что у вас установленна [Node.js 17.0.1](https://nodejs.org/en/) или новее.
+* Убедитесь, что у вас установленна [Node.js LTS](https://nodejs.org/en/).
 * Склонируйте репозиторий на свой компьютер: 
   * `git clone git@github.com:MaximKalinchuk/backend-project-lvl1.git`
 

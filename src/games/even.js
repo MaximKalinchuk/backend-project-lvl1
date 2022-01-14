@@ -1,19 +1,19 @@
-import engine from '../index.js';
-import { getRandomInRange } from '../random.js';
+import gameConstructor from '../index.js';
+import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameBody = () => {
   const randomNumber = getRandomInRange(2, 99);
   const gameQuestion = randomNumber;
-  let result;
+  let rightAnswer;
   if (randomNumber % 2 === 0) {
-    result = 'yes';
+    rightAnswer = 'yes';
   } else {
-    result = 'no';
+    rightAnswer = 'no';
   }
-  return [gameQuestion, result];
+  return [gameQuestion, rightAnswer];
 };
-const gameEven = () => engine(gameRules, gameBody);
+const gameEven = () => gameConstructor(gameRules, gameBody);
 
 export default gameEven;

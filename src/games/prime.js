@@ -1,23 +1,23 @@
-import engine from '../index.js';
-import { getRandomInRange } from '../random.js';
+import gameConstructor from '../index.js';
+import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const gameBody = () => {
   const generationNumber = getRandomInRange(2, 10);
   const gameQuestion = generationNumber;
-  let result = 'yes';
+  let rightAnswer = 'yes';
   for (let i = 2; i < generationNumber; i += 1) {
     if (generationNumber % i === 0) {
-      result = 'no';
+      rightAnswer = 'no';
       break;
     } else {
-      result = 'yes';
+      rightAnswer = 'yes';
     }
   }
-  return [gameQuestion, result];
+  return [gameQuestion, rightAnswer];
 };
 
-const gamePrime = () => engine(gameRules, gameBody);
+const gamePrime = () => gameConstructor(gameRules, gameBody);
 
 export default gamePrime;
