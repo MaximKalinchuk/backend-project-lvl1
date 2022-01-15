@@ -1,4 +1,4 @@
-import gameConstructor from '../index.js';
+import constructGame from '../index.js';
 import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'What number is missing in the progression?';
@@ -20,6 +20,6 @@ const gameBody = () => {
   return [progression.join(' '), rightAnswer];
 };
 
-const gameProgression = () => gameConstructor(gameRules, gameBody);
+const gameProgression = () => constructGame(gameRules, gameBody);
 
 export default gameProgression;

@@ -1,4 +1,4 @@
-import gameConstructor from '../index.js';
+import constructGame from '../index.js';
 import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -16,6 +16,6 @@ const gameBody = () => {
   return [gameQuestion, rightAnswer];
 };
 
-const gamePrime = () => gameConstructor(gameRules, gameBody);
+const gamePrime = () => constructGame(gameRules, gameBody);
 
 export default gamePrime;

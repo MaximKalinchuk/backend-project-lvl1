@@ -1,4 +1,4 @@
-import gameConstructor from '../index.js';
+import constructGame from '../index.js';
 import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
@@ -20,6 +20,6 @@ const gameBody = () => {
   return [gameQuestion, rightAnswer];
 };
 
-const GameGCD = () => gameConstructor(gameRules, gameBody);
+const GameGCD = () => constructGame(gameRules, gameBody);
 
 export default GameGCD;

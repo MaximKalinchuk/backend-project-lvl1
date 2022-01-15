@@ -1,4 +1,4 @@
-import gameConstructor from '../index.js';
+import constructGame from '../index.js';
 import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'What is the result of the expression?';
@@ -25,6 +25,6 @@ const gameBody = () => {
   return [gameQuestion, rightAnswer];
 };
 
-const gameCalc = () => gameConstructor(gameRules, gameBody);
+const gameCalc = () => constructGame(gameRules, gameBody);
 
 export default gameCalc;

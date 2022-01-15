@@ -1,4 +1,4 @@
-import gameConstructor from '../index.js';
+import constructGame from '../index.js';
 import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -12,6 +12,6 @@ const gameBody = () => {
 
   return [gameQuestion, rightAnswer];
 };
-const gameEven = () => gameConstructor(gameRules, gameBody);
+const gameEven = () => constructGame(gameRules, gameBody);
 
 export default gameEven;
