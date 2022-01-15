@@ -8,12 +8,10 @@ const gameBody = () => {
   const gameQuestion = generationNumber;
   let rightAnswer = 'yes';
   for (let i = 2; i < generationNumber; i += 1) {
-    if (generationNumber % i === 0) {
-      rightAnswer = 'no';
-      break;
-    } else {
-      rightAnswer = 'yes';
-    }
+    const isPrime = generationNumber % i === 0;
+    rightAnswer = isPrime ? 'no' : 'yes';
+
+    if (isPrime) break;
   }
   return [gameQuestion, rightAnswer];
 };

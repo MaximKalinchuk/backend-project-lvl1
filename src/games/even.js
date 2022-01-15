@@ -6,12 +6,10 @@ const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const gameBody = () => {
   const randomNumber = getRandomInRange(2, 99);
   const gameQuestion = randomNumber;
-  let rightAnswer;
-  if (randomNumber % 2 === 0) {
-    rightAnswer = 'yes';
-  } else {
-    rightAnswer = 'no';
-  }
+
+  const isEven = randomNumber % 2 === 0;
+  const rightAnswer = isEven ? 'yes' : 'no';
+
   return [gameQuestion, rightAnswer];
 };
 const gameEven = () => gameConstructor(gameRules, gameBody);
