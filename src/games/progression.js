@@ -3,23 +3,24 @@ import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const getProgression = () => {
-  const value = getRandomInRange(2, 5);
+const makeProgression = (firstElement, step, length) => {
   const progression = [];
-  for (let i = value; progression.length < 10; i += value) {
-    progression.push(i);
+  for (let i = 0; i < length; i += 1) {
+    progression.push(firstElement + i * step);
   }
   return progression;
 };
 
-const gameBody = () => {
-  const progression = getProgression();
+const getGameElements = () => {
+  const firstProgressionElement = getRandomInRange(2, 5);
+  const progressitonStep = getRandomInRange(2, 5);
+  const progressionLength = getRandomInRange(10, 15);
+
+  const progression = makeProgression(firstProgressionElement, progressitonStep, progressionLength);
   const hiddenElement = getRandomInRange(0, 9);
   const rightAnswer = String(progression[hiddenElement]);
   progression[hiddenElement] = '..';
   return [progression.join(' '), rightAnswer];
 };
 
-const gameProgression = () => constructGame(gameRules, gameBody);
-
-export default gameProgression;
+export default () => constructGame(gameRules, getGameElements);

@@ -3,19 +3,26 @@ import getRandomInRange from '../randomizer.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameBody = () => {
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const getGameElements = () => {
   const generationNumber = getRandomInRange(2, 10);
   const gameQuestion = generationNumber;
-  let rightAnswer = 'yes';
-  for (let i = 2; i < generationNumber; i += 1) {
-    const isPrime = generationNumber % i === 0;
-    rightAnswer = isPrime ? 'no' : 'yes';
 
-    if (isPrime) break;
-  }
+  const rightAnswer = isPrime(generationNumber) ? 'yes' : 'no';
+
   return [gameQuestion, rightAnswer];
 };
 
-const gamePrime = () => constructGame(gameRules, gameBody);
-
-export default gamePrime;
+export default () => constructGame(gameRules, getGameElements);

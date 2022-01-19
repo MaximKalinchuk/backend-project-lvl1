@@ -11,7 +11,7 @@ const gcd = (firstNumber, secondNumber) => {
   return firstNumber;
 };
 
-const gameBody = () => {
+const getGameElements = () => {
   const firstRandomNumber = getRandomInRange(2, 10);
   const secondRandomNumber = getRandomInRange(2, 10);
 
@@ -20,6 +20,4 @@ const gameBody = () => {
   return [gameQuestion, rightAnswer];
 };
 
-const GameGCD = () => constructGame(gameRules, gameBody);
-
-export default GameGCD;
+export default () => constructGame(gameRules, getGameElements);
