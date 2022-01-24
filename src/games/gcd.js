@@ -5,8 +5,8 @@ const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (firstNumber, secondNumber) => {
   if (secondNumber !== 0) {
-    const someNumber = firstNumber % secondNumber;
-    return gcd(secondNumber, someNumber);
+    const remainder = firstNumber % secondNumber;
+    return gcd(secondNumber, remainder);
   }
   return firstNumber;
 };

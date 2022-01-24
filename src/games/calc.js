@@ -9,8 +9,10 @@ const getRightAnswer = (num1, num2, operator) => {
       return String(num1 * num2);
     case '+':
       return String(num1 + num2);
-    default:
+    case '-':
       return String(num1 - num2);
+    default:
+      return 'Invalid operator';
   }
 };
 
