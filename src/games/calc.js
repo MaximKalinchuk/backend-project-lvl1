@@ -12,7 +12,7 @@ const getRightAnswer = (num1, num2, operator) => {
     case '-':
       return String(num1 - num2);
     default:
-      return 'Invalid operator';
+      throw new Error('Invalid operator');
   }
 };
 
