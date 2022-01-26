@@ -1,7 +1,7 @@
 #### **Hexlet тесты, CodeClimate и linter статус:**
 
 [![Actions Status](https://github.com/MaximKalinchuk/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MaximKalinchuk/backend-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/48276031ad56f283b5ab/maintainability)](https://codeclimate.com/github/MaximKalinchuk/backend-project-lvl1/maintainability)
 ![example workflow](https://github.com/MaximKalinchuk/backend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
 #### **Что это такое?**
